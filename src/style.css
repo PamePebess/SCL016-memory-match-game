@@ -1,0 +1,44 @@
+body {
+    background-image: url("image/fondo.jpg");
+    font-family: 'Asap Condensed', sans-serif;
+    
+}
+
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh; 
+}
+
+#logopic {
+    width: 25vw;
+    
+}
+
+#startPlay {
+    width: 40vw;
+    height: 20vh;
+    background-color: #DD4C28;
+    border-radius: 30px;
+    color: white;
+    font-size: 7vw;
+    font-family: 'asap condensed', sans-serif;
+    border: none;
+
+
+}
+
+#instructions {
+    width: 20vw;
+    height: 8vh;
+    background-color: #DD4C28;
+    border-radius: 20px;
+    color: white;
+    font-size: 2vw;
+    font-family: 'asap condensed', sans-serif;
+    border: none;
+}
