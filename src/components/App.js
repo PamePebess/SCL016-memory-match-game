@@ -12,13 +12,12 @@
 //   .then(resp => resp.json())
 //   .then(console.log)
 //   .catch(console.error);
-//
 
-const App = () => {
+ const App = () => {
   const el = document.createElement('div');
 
   el.className = 'App';
-  el.textContent = 'Hola mundo!';
+  el.textContent = 'CHAAOOOO!';
 
   return el;
 };

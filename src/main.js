@@ -11,36 +11,29 @@ const listenersButtons = () =>{
 }
 //Funcion que pase desde el home a selección de temas
 const buttonThemes = () =>{
-    document.getElementById("themes").style.display = "initial";
+    document.getElementById("themes").style.display = "flex";
     document.getElementById("home").style.display = "none";  
 }
 //Funcion boton salir de la página de temas
 const buttonExit = () =>{
-    document.getElementById("home").style.display = "initial";
+    document.getElementById("home").style.display = "flex";
     document.getElementById("themes").style.display = "none";
 }
-
-
 //Función botón para ir a la página de instrucciones
 const buttonInstructions = () =>{
-    document.getElementById("guide").style.display = "initial";
+    document.getElementById("guide").style.display = "flex";
     document.getElementById("home").style.display = "none";
 }
 
+//Función botón salir de la página de instrucciones
+const buttonGuideExit = () =>{
+    document.getElementById("home").style.display = "flex";
+    document.getElementById("guide").style.display = "none";
+}
 //Funcion html dinamico de seleccion de temas
 const selectionThemes = ()=>{
     document.getElementById("themesSelection").appendChild(themes());
 }
-
-
-
-//Función botón salir de la página de instrucciones
-const buttonGuideExit = () =>{
-    document.getElementById("home").style.display = "initial";
-    document.getElementById("guide").style.display = "none";
-}
-
-
 //Funciones que se llaman siempre
 listenersButtons();
 selectionThemes();
