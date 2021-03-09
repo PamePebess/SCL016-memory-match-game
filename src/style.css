@@ -3,9 +3,7 @@ body {
     font-family: 'Asap Condensed', sans-serif;
     
 }
-
-
-
+/* Seccion Home*/
 #home {
     display: flex;
     flex-direction: column;
@@ -13,32 +11,69 @@ body {
     justify-content: space-between;
     height: 90vh; 
 }
-
 #logopic {
     width: 25vw;
-    
 }
-
+/*Botones */  
+#startPlay , #instructions, #guideExit,#exit {
+    background-color: #DD4C28;
+    color: white;
+    font-family: 'asap condensed', sans-serif;
+    border: none;
+}
 #startPlay {
     width: 40vw;
     height: 20vh;
-    background-color: #DD4C28;
     border-radius: 30px;
-    color: white;
-    font-size: 7vw;
-    font-family: 'asap condensed', sans-serif;
-    border: none;
-
-
+    font-size: 7vw; 
 }
-
 #instructions {
     width: 20vw;
     height: 8vh;
-    background-color: #DD4C28;
     border-radius: 20px;
-    color: white;
-    font-size: 2vw;
-    font-family: 'asap condensed', sans-serif;
-    border: none;
+    font-size: 2vw;  
 }
+/* Seccion Instrucciones*/
+#guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh; 
+    border: 2px solid red;
+}
+#instruccionspic {
+    width: 65vw;
+    margin-bottom: 3%;
+}
+#titleInstrucciones {
+    font-size: 5vw;
+    font-family: 'asap condensed', sans-serif;
+    margin-right: 55%;  
+}
+#guideExit{
+    width: 15vw;
+    height: 5vh;
+    border-radius: 20px;
+    font-size: 2vw;   
+}
+/*Temas*/
+#themes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh; 
+    border: 2px solid red;
+}
+#titleChooseTheme{
+    font-size: 5vw;
+    font-family: 'asap condensed', sans-serif;
+}
+#exit{
+    width: 15vw;
+    height: 5vh;
+    border-radius: 20px;
+    font-size: 2vw; 
+}
+
