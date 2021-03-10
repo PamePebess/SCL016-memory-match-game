@@ -1,5 +1,5 @@
 export default [
-    {name: "Personajes de tv", image: "image/animadores.png"}, 
-    {name: "Cantantes", image: "image/cantantes.png"}, 
-    {name: "Frutas", image: "image/frutas.png"}
+    {name: "personajesDeTv", image: "image/animadores.png"}, 
+    {name: "cantantes", image: "image/cantantes.png"}, 
+    {name: "frutas", image: "image/frutas.png"},
 ];

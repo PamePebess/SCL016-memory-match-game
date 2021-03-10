@@ -1,5 +1,6 @@
 import App from './components/App.js';
-import themes from './components/themes.js';
+import {themes, showCards} from './components/themes.js';
+
 //document.getElementById('root').appendChild(App());
 
 //Listener de botones 
@@ -34,6 +35,7 @@ const buttonGuideExit = () =>{
 const selectionThemes = ()=>{
     document.getElementById("themesSelection").appendChild(themes());
 }
+
 //Funciones que se llaman siempre
 listenersButtons();
 selectionThemes();
