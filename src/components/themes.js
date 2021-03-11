@@ -24,7 +24,7 @@ export const showCards = (i) => {
         //Crear una variable donde guardo un nuevo elemento html div
         const listOfCards = document.createElement("div");
         listOfCards.className = "cards";
-        // Agregamos el elemento  list of cards (elemento papa)  al elmento (super papa) de html
+        // Agregamos el elemento  list of cards (elemento papá)  al elemento (super papá) de html
         document.getElementById("game").appendChild(listOfCards);
         const duplicateArrayCards = [];
             // Switch para la elección de tema
@@ -39,7 +39,7 @@ export const showCards = (i) => {
                     break;
                 case "cantantes":
                     duplicateArrayCards.push(...singers.items, ...singers.items);
-                    for (let j = 0; j<singers.items.length; j++){
+                    for (let j = 0; j<duplicateArrayCards.length; j++){
                         const oneCard = document.createElement("img");
                         oneCard.src = duplicateArrayCards[j].image;
                         listOfCards.appendChild(oneCard);
@@ -47,7 +47,7 @@ export const showCards = (i) => {
                     break;
                 case "frutas":
                     duplicateArrayCards.push(...fruits.items, ...fruits.items);
-                    for ( let j = 0; j<fruits.items.length; j++){
+                    for ( let j = 0; j<duplicateArrayCards.length; j++){
                         const oneCard = document.createElement("img");
                         oneCard.src = duplicateArrayCards[j].image;
                         listOfCards.appendChild(oneCard);
