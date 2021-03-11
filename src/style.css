@@ -81,4 +81,17 @@ body {
     margin-right: 2%;
     height: 45vh;
 }
-
+/*Sección cartas*/
+#game {
+    display: flex;
+    flex-direction: column;
+}
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.cards img {
+    height: 20vh;
+    width: 10vw;
+}
