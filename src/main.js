@@ -1,5 +1,6 @@
 import App from './components/App.js';
-import themes from './components/themes.js';
+import {themes, showCards} from './components/themes.js';
+
 //document.getElementById('root').appendChild(App());
 
 //Listener de botones 
@@ -35,11 +36,15 @@ const buttonGuideExit = () =>{
 const selectionThemes = ()=>{
     document.getElementById("themesSelection").appendChild(themes());
 }
+ pamebranch
 //Función botón volver al menú
 const buttonBackToMenu = ()=>{
     document.getElementById("themes").style.display = "flex";
     document.getElementById("resultsPage").style.display = "none";
 }
+
+
+ master
 //Funciones que se llaman siempre
 listenersButtons();
 selectionThemes();

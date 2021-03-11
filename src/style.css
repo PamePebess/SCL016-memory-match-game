@@ -1,7 +1,6 @@
 body {
     background-image: url("image/fondo.jpg");
     font-family: 'Asap Condensed', sans-serif;
-    
 }
 /* Seccion Home*/
 #home {
@@ -40,7 +39,6 @@ body {
     align-items: center;
     justify-content: space-around;
     height: 90vh; 
-    border: 2px solid red;
 }
 #instruccionspic {
     width: 65vw;
@@ -57,14 +55,13 @@ body {
     border-radius: 20px;
     font-size: 2vw;   
 }
-/*Temas*/
+/*Sección Temas*/
 #themes{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     height: 90vh; 
-    border: 2px solid red;
 }
 #titleChooseTheme{
     font-size: 5vw;
@@ -75,5 +72,13 @@ body {
     height: 5vh;
     border-radius: 20px;
     font-size: 2vw; 
+}
+.themesButtons {
+    display: flex;
+    flex-direction: row;
+}
+.themesButtons img {
+    margin-right: 2%;
+    height: 45vh;
 }
 
