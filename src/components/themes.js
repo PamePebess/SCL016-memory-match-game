@@ -39,7 +39,7 @@ export const showCards = (i) => {
                     break;
                 case "cantantes":
                     duplicateArrayCards.push(...singers.items, ...singers.items);
-                    for (let j = 0; j<singers.items.length; j++){
+                    for (let j = 0; j<duplicateArrayCards.length; j++){
                         const oneCard = document.createElement("img");
                         oneCard.src = duplicateArrayCards[j].image;
                         listOfCards.appendChild(oneCard);
@@ -47,7 +47,7 @@ export const showCards = (i) => {
                     break;
                 case "frutas":
                     duplicateArrayCards.push(...fruits.items, ...fruits.items);
-                    for ( let j = 0; j<fruits.items.length; j++){
+                    for ( let j = 0; j<duplicateArrayCards.length; j++){
                         const oneCard = document.createElement("img");
                         oneCard.src = duplicateArrayCards[j].image;
                         listOfCards.appendChild(oneCard);
