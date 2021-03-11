@@ -8,6 +8,7 @@ const listenersButtons = () =>{
     document.getElementById("exit").addEventListener("click",buttonExit);
     document.getElementById("instructions").addEventListener("click",buttonInstructions);
     document.getElementById("guideExit").addEventListener("click",buttonGuideExit);
+    document.getElementById("backToMenu").addEventListener("click",buttonBackToMenu);
 }
 //Funcion que pase desde el home a selección de temas
 const buttonThemes = () =>{
@@ -33,6 +34,11 @@ const buttonGuideExit = () =>{
 //Funcion html dinamico de seleccion de temas
 const selectionThemes = ()=>{
     document.getElementById("themesSelection").appendChild(themes());
+}
+//Función botón volver al menú
+const buttonBackToMenu = ()=>{
+    document.getElementById("themes").style.display = "flex";
+    document.getElementById("resultsPage").style.display = "none";
 }
 //Funciones que se llaman siempre
 listenersButtons();
