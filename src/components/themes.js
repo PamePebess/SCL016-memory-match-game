@@ -11,6 +11,7 @@ export const themes = () => {
         themeButtonElement.addEventListener("click", showCards(i));
         listOfThemes.appendChild(themeButtonElement);
         listOfThemes.className = "themesButtons";
+        
     }
     return listOfThemes;
 };
@@ -22,23 +23,35 @@ export const showCards = (i) => {
         document.getElementById("game").style.display = "flex";
         //Crear una variable donde guardo un nuevo elemento html div
         const listOfCards = document.createElement("div");
+        listOfCards.className = "cards";
         // Agregamos el elemento  list of cards (elemento papa)  al elmento (super papa) de html
         document.getElementById("game").appendChild(listOfCards);
+        const duplicateArrayCards = [];
             // Switch para la elección de tema
             switch (themesArray[i].name){
                 case "personajesDeTv":
-                    for (let j = 0; j<tvShow.items.length; j++){
+                    duplicateArrayCards.push(...tvShow.items, ...tvShow.items);
+                    for (let j = 0; j<duplicateArrayCards.length; j++){
                         const oneCard = document.createElement("img");
-                        oneCard.src = tvShow.items[j].image;
+                        oneCard.src = duplicateArrayCards[j].image;
                         listOfCards.appendChild(oneCard);
                     }
-                    oneCard.textContent = tvShow.name;
                     break;
                 case "cantantes":
-                    oneCard.textContent = singers.name;
+                    duplicateArrayCards.push(...singers.items, ...singers.items);
+                    for (let j = 0; j<singers.items.length; j++){
+                        const oneCard = document.createElement("img");
+                        oneCard.src = duplicateArrayCards[j].image;
+                        listOfCards.appendChild(oneCard);
+                    }
                     break;
                 case "frutas":
-                    oneCard.textContent = fruits.name;
+                    duplicateArrayCards.push(...fruits.items, ...fruits.items);
+                    for ( let j = 0; j<fruits.items.length; j++){
+                        const oneCard = document.createElement("img");
+                        oneCard.src = duplicateArrayCards[j].image;
+                        listOfCards.appendChild(oneCard);
+                    }
                     break;   
             }
         }

@@ -36,7 +36,7 @@ const buttonGuideExit = () =>{
 const selectionThemes = ()=>{
     document.getElementById("themesSelection").appendChild(themes());
 }
- pamebranch
+
 //Función botón volver al menú
 const buttonBackToMenu = ()=>{
     document.getElementById("themes").style.display = "flex";
@@ -44,7 +44,7 @@ const buttonBackToMenu = ()=>{
 }
 
 
- master
+
 //Funciones que se llaman siempre
 listenersButtons();
 selectionThemes();
