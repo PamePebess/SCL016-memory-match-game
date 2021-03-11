@@ -24,7 +24,7 @@ export const showCards = (i) => {
         //Crear una variable donde guardo un nuevo elemento html div
         const listOfCards = document.createElement("div");
         listOfCards.className = "cards";
-        // Agregamos el elemento  list of cards (elemento papa)  al elmento (super papa) de html
+        // Agregamos el elemento  list of cards (elemento papá)  al elemento (super papá) de html
         document.getElementById("game").appendChild(listOfCards);
         const duplicateArrayCards = [];
             // Switch para la elección de tema
