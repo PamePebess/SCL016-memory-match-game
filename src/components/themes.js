@@ -2,6 +2,7 @@ import themesArray from '../data/themes/themes.js';
 import tvShow from '../data/themes/tv.js';
 import fruits from '../data/themes/fruits.js';
 import singers from '../data/themes/singers.js';
+import oneCard from '../components/oneCard.js';
 
 export const themes = () => {
     const listOfThemes = document.createElement("div");
@@ -46,11 +47,8 @@ export const showCards = (i) => {
             shuffle(duplicateArrayCards);
             //Iterar sobre el arreglo y creamos el elemento imagen
             for (let j = 0; j<duplicateArrayCards.length; j++){
-                const oneCard = document.createElement("img");
-                //Le damos la ruta al elemento imagen
-                oneCard.src = duplicateArrayCards[j].image;
-                // Agregamos el elemento imagen  al elemento papa que es listofcards
-                listOfCards.appendChild(oneCard);
+                // Agregamos el elemento imagen (que es una funcion)  al elemento papa que es listofcards
+                listOfCards.appendChild(oneCard(duplicateArrayCards[j]));
             }
         }
     return createElementCards;
