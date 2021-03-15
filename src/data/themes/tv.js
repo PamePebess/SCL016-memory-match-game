@@ -1,9 +1,9 @@
 export default {
     name: 'Tv Show',
     items: [
-      { id: 'amaro', image: 'image/photos_tv/Amaro_GomezPablo.jpg'},
-      { id: 'cristian', image: 'image/photos_tv/Cristian_Sanchez.jpg' },
-      { id: 'donFrancisco', image: 'image/photos_tv/Don_Francisco.jpg' },
-      { id: 'tonka', image: 'image/photos_tv/tonka.jpg' },
+      { id: 'amaro', image: 'image/tvShow/amaro.jpg'},
+      { id: 'cristian', image: 'image/tvShow/cristian.jpg' },
+      { id: 'donFrancisco', image: 'image/tvShow/francisco.jpg' },
+      { id: 'tonka', image: 'image/tvShow/tonka.jpg' },
     ],
   };
