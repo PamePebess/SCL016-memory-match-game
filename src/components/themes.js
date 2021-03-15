@@ -28,32 +28,40 @@ export const showCards = (i) => {
         document.getElementById("game").appendChild(listOfCards);
         const duplicateArrayCards = [];
             // Switch para la elección de tema
+            //switch dependiendo del tema 
             switch (themesArray[i].name){
+                //Si es personaje de tv
                 case "personajesDeTv":
-                    duplicateArrayCards.push(...tvShow.items, ...tvShow.items);
-                    for (let j = 0; j<duplicateArrayCards.length; j++){
-                        const oneCard = document.createElement("img");
-                        oneCard.src = duplicateArrayCards[j].image;
-                        listOfCards.appendChild(oneCard);
-                    }
+                    // toma el arreglo vacio y agregale 2 veces los items del tema tv
+                    duplicateArrayCards.push(...tvShow.items, ...tvShow.items);           
                     break;
                 case "cantantes":
                     duplicateArrayCards.push(...singers.items, ...singers.items);
-                    for (let j = 0; j<duplicateArrayCards.length; j++){
-                        const oneCard = document.createElement("img");
-                        oneCard.src = duplicateArrayCards[j].image;
-                        listOfCards.appendChild(oneCard);
-                    }
                     break;
                 case "frutas":
                     duplicateArrayCards.push(...fruits.items, ...fruits.items);
-                    for ( let j = 0; j<duplicateArrayCards.length; j++){
-                        const oneCard = document.createElement("img");
-                        oneCard.src = duplicateArrayCards[j].image;
-                        listOfCards.appendChild(oneCard);
-                    }
                     break;   
+            }
+            //Una vez decidido el tema con el switch vamos a tomar el arreglo y hacerlo aleatorio
+            shuffle(duplicateArrayCards);
+            //Iterar sobre el arreglo y creamos el elemento imagen
+            for (let j = 0; j<duplicateArrayCards.length; j++){
+                const oneCard = document.createElement("img");
+                //Le damos la ruta al elemento imagen
+                oneCard.src = duplicateArrayCards[j].image;
+                // Agregamos el elemento imagen  al elemento papa que es listofcards
+                listOfCards.appendChild(oneCard);
             }
         }
     return createElementCards;
+    }
+
+
+//Funcion shuffle
+    function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
     }
