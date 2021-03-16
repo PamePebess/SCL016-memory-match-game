@@ -47,6 +47,8 @@ export const showCards = (i) => {
             shuffle(duplicateArrayCards);
             //Iterar sobre el arreglo y creamos el elemento imagen
             for (let j = 0; j<duplicateArrayCards.length; j++){
+                //Crear una nueva propiedad que define el estado de nuestra carta
+                duplicateArrayCards[j].revealed = false;
                 // Agregamos el elemento imagen (que es una funcion)  al elemento papa que es listofcards
                 listOfCards.appendChild(oneCard(duplicateArrayCards[j]));
             }
