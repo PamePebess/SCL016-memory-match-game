@@ -34,13 +34,19 @@ export const showCards = (i) => {
                 //Si es personaje de tv
                 case "personajesDeTv":
                     // toma el arreglo vacio y agregale 2 veces los items del tema tv
-                    duplicateArrayCards.push(...tvShow.items, ...tvShow.items);           
+                    duplicateArrayCards.push(
+                    ...tvShow.items.map(item => ({...item})), 
+                    ...tvShow.items.map(item => ({...item})));           
                     break;
                 case "cantantes":
-                    duplicateArrayCards.push(...singers.items, ...singers.items);
+                    duplicateArrayCards.push(
+                    ...singers.items.map(item => ({...item})),
+                    ...singers.items.map(item => ({...item})));
                     break;
                 case "frutas":
-                    duplicateArrayCards.push(...fruits.items, ...fruits.items);
+                    duplicateArrayCards.push(
+                    ...fruits.items.map(item => ({...item})),
+                    ...fruits.items.map(item => ({...item})));
                     break;   
             }
             //Una vez decidido el tema con el switch vamos a tomar el arreglo y hacerlo aleatorio
