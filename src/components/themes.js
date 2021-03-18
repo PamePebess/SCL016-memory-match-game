@@ -3,6 +3,7 @@ import tvShow from '../data/themes/tv.js';
 import fruits from '../data/themes/fruits.js';
 import singers from '../data/themes/singers.js';
 import oneCard from '../components/oneCard.js';
+import {setMatchCards} from '../game.js';
 
 export const themes = () => {
     const listOfThemes = document.createElement("div");
@@ -53,6 +54,8 @@ export const showCards = (i) => {
             shuffle(duplicateArrayCards);
             //Iterar sobre el arreglo y creamos el elemento imagen
             for (let j = 0; j<duplicateArrayCards.length; j++){
+                //seteo match cards en cero
+                setMatchCards(0);
                 //Crear una nueva propiedad que define el estado de nuestra carta
                 duplicateArrayCards[j].revealed = false;
                 // Agregamos el elemento imagen (que es una funcion)  al elemento papa que es listofcards

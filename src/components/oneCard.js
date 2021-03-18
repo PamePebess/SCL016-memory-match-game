@@ -1,4 +1,4 @@
-import {getLastClickedCard, setLastClickedCard} from '../game.js';
+import {getLastClickedCard, getMatchCards, setLastClickedCard, setMatchCards} from '../game.js';
 
 const createOneCardEl = (dataItems) =>{
     //creamos una variable que guarda la creacion del elemento imagen
@@ -27,10 +27,10 @@ const showCardClick =(dataItems) =>{
     //Si es que ya hay una carta guardada , es decir ya hubo un primer click, debemos comprara
         }else{
             if (clickedCard.id == dataItems.id){
-                clickedCard.revealed = true;
-                clickedCard.element.src = dataItems.image;
-                dataItems.revealed= true;
-                dataItems.element.src = dataItems.image;
+                //setear match cards +1
+                setMatchCards(getMatchCards()+1)//matchCards++;
+                //Llamar a la f.game over , le damos como agurmento getmatchcards y lo revisa
+                gameOver(getMatchCards());
             }else{ //escondelas 
                 const hideCards = () =>{
                 clickedCard.revealed = false;
@@ -47,3 +47,12 @@ const showCardClick =(dataItems) =>{
 }
 
 export default createOneCardEl;
+
+
+//Funcion que termina el juego
+const gameOver = (matchCards) =>{
+    if (matchCards==4){
+        document.getElementById("resultsPage").style.display = "flex";
+        document.getElementById("game").style.display = "none";   
+    }
+}  
