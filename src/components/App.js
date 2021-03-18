@@ -13,7 +13,7 @@
 //   .then(console.log)
 //   .catch(console.error);
 
- const App = () => {
+ /*const App = () => {
   const el = document.createElement('div');
 
   el.className = 'App';
@@ -22,4 +22,4 @@
   return el;
 };
 
-export default App;
+export default App;*/

@@ -1,5 +1,5 @@
-import App from './components/App.js';
-import {themes, showCards} from './components/themes.js';
+/*import App from './components/App.js';*/
+import {themes} from './components/themes.js';
 
 //document.getElementById('root').appendChild(App());
 
