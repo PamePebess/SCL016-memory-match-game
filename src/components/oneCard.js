@@ -23,7 +23,7 @@ const showCardClick =(dataItems) =>{
         //Veo si hay algo en lastclicked card 
         if(clickedCard==null){
         setLastClickedCard(dataItems);
-        console.log ("click en la primera carta");
+        //console.log ("click en la primera carta");
     //Si es que ya hay una carta guardada , es decir ya hubo un primer click, debemos comprara
         }else{
             if (clickedCard.id == dataItems.id){

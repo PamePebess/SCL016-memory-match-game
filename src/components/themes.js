@@ -18,7 +18,7 @@ export const themes = () => {
     return listOfThemes;
 };
 //Funcion que muestra "algo" al hacer click en un tema
-export const showCards = (i) => {
+const showCards = (i) => {
     const createElementCards = () =>{
         //Mostrar y ocultar las secciones
         document.getElementById("themes").style.display = "none";
@@ -58,8 +58,9 @@ export const showCards = (i) => {
                 setMatchCards(0);
                 //Crear una nueva propiedad que define el estado de nuestra carta
                 duplicateArrayCards[j].revealed = false;
+                const cardEl = oneCard(duplicateArrayCards[j]);
                 // Agregamos el elemento imagen (que es una funcion)  al elemento papa que es listofcards
-                listOfCards.appendChild(oneCard(duplicateArrayCards[j]));
+                listOfCards.appendChild(cardEl);
             }
         }
     return createElementCards;
