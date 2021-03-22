@@ -30,6 +30,7 @@ export const showCards = (i) => {
         //Limpiar la partida jugada
         document.getElementById("game").innerHTML = "";
         // Agregamos el elemento  list of cards (elemento papá)  al elemento (super papá) de html
+        document.getElementById("game").innerHTML = ""
         document.getElementById("game").appendChild(listOfCards);
         const duplicateArrayCards = [];
             // Switch para la elección de tema
@@ -72,7 +73,7 @@ export const showCards = (i) => {
 
 
 //Funcion shuffle
-    function shuffle(a) {
+    export function shuffle(a) {
         for (let i = a.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [a[i], a[j]] = [a[j], a[i]];
