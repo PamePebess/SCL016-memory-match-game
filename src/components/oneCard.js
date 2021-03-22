@@ -14,7 +14,7 @@ const createOneCardEl = (dataItems) =>{
     }
 
 //Función que muestre una carta al hacer click
-const showCardClick =(dataItems) =>{
+export const showCardClick =(dataItems) =>{
     return () =>{
         dataItems.revealed = true;
         dataItems.element.src = dataItems.image;

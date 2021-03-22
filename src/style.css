@@ -44,7 +44,7 @@ body {
     width: 65vw;
     margin-bottom: 3%;
 }
-#titleInstrucciones {
+#titleGameandIns {
     font-size: 5vw;
     font-family: 'asap condensed', sans-serif;
     margin-right: 55%;  
@@ -96,3 +96,11 @@ body {
     height: 30vh;
     width: 15vw;
 }
+/*Logo picture de todas las páginas*/
+#smallLogopic {
+    height: 25vh;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+

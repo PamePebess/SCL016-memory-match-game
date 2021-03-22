@@ -18,7 +18,7 @@ export const themes = () => {
     return listOfThemes;
 };
 //Funcion que muestra "algo" al hacer click en un tema
-const showCards = (i) => {
+export const showCards = (i) => {
     const createElementCards = () =>{
         //Mostrar y ocultar las secciones
         document.getElementById("themes").style.display = "none";
@@ -27,6 +27,7 @@ const showCards = (i) => {
         const listOfCards = document.createElement("div");
         listOfCards.className = "cards";
         // Agregamos el elemento  list of cards (elemento papá)  al elemento (super papá) de html
+        document.getElementById("game").innerHTML = ""
         document.getElementById("game").appendChild(listOfCards);
         const duplicateArrayCards = [];
             // Switch para la elección de tema
@@ -68,7 +69,7 @@ const showCards = (i) => {
 
 
 //Funcion shuffle
-    function shuffle(a) {
+    export function shuffle(a) {
         for (let i = a.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [a[i], a[j]] = [a[j], a[i]];
