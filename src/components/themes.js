@@ -13,6 +13,7 @@ export const themes = () => {
         themeButtonElement.addEventListener("click", showCards(i));
         listOfThemes.appendChild(themeButtonElement);
         listOfThemes.className = "themesButtons";
+               
         
     }
     return listOfThemes;
@@ -26,6 +27,8 @@ export const showCards = (i) => {
         //Crear una variable donde guardo un nuevo elemento html div
         const listOfCards = document.createElement("div");
         listOfCards.className = "cards";
+        //Limpiar la partida jugada
+        document.getElementById("game").innerHTML = "";
         // Agregamos el elemento  list of cards (elemento papá)  al elemento (super papá) de html
         document.getElementById("game").innerHTML = ""
         document.getElementById("game").appendChild(listOfCards);
@@ -66,6 +69,7 @@ export const showCards = (i) => {
         }
     return createElementCards;
     }
+
 
 
 //Funcion shuffle
