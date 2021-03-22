@@ -10,6 +10,7 @@ const listenersButtons = () =>{
     document.getElementById("instructions").addEventListener("click",buttonInstructions);
     document.getElementById("guideExit").addEventListener("click",buttonGuideExit);
     document.getElementById("backToMenu").addEventListener("click",buttonBackToMenu);
+    document.getElementById("playAgain").addEventListener("click", buttonPlayAgain);
 }
 //Funcion que pase desde el home a selección de temas
 const buttonThemes = () =>{
@@ -41,6 +42,14 @@ const selectionThemes = ()=>{
 const buttonBackToMenu = ()=>{
     document.getElementById("themes").style.display = "flex";
     document.getElementById("resultsPage").style.display = "none";
+}
+
+//Función botón volver al juego
+const buttonPlayAgain = () =>{
+    document.getElementById("game").style.display = "flex";
+    document.getElementById("resultsPage").style.display = "none";
+    
+
 }
 
 

@@ -14,7 +14,7 @@ body {
     width: 25vw;
 }
 /*Botones */  
-#startPlay , #instructions, #guideExit,#exit {
+#startPlay, #instructions, #guideExit, #exit, #playAgain, #backToMenu {
     background-color: #DD4C28;
     color: white;
     font-family: 'asap condensed', sans-serif;
@@ -81,18 +81,39 @@ body {
     margin-right: 2%;
     height: 45vh;
 }
-/*Sección cartas*/
+/*Sección Cartas*/
 #game {
     display: flex;
     flex-direction: column;
 }
 .cards {
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 .cards img {
     height: 30vh;
     width: 15vw;
 }
+/*Sección Resultado*/
+#resultsPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh; 
+}
+#congratulations {
+   font-size: 5vw;
+   font-family: 'asap condensed', sans-serif;
+}
+#playAgain, #backToMenu {
+   width: 30vw;
+   height: 15vh;
+   border-radius: 30px;
+   font-size: 4vw; 
+}
+
+
+
