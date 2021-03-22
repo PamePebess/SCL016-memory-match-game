@@ -3,7 +3,7 @@ import tvShow from '../data/themes/tv.js';
 import fruits from '../data/themes/fruits.js';
 import singers from '../data/themes/singers.js';
 import oneCard from '../components/oneCard.js';
-import {setMatchCards} from '../game.js';
+import {setMatchCards,setIndexTheme} from '../game.js';
 
 export const themes = () => {
     const listOfThemes = document.createElement("div");
@@ -13,8 +13,6 @@ export const themes = () => {
         themeButtonElement.addEventListener("click", showCards(i));
         listOfThemes.appendChild(themeButtonElement);
         listOfThemes.className = "themesButtons";
-               
-        
     }
     return listOfThemes;
 };
@@ -24,14 +22,14 @@ export const showCards = (i) => {
         //Mostrar y ocultar las secciones
         document.getElementById("themes").style.display = "none";
         document.getElementById("game").style.display = "flex";
+        setIndexTheme(i);
         //Crear una variable donde guardo un nuevo elemento html div
         const listOfCards = document.createElement("div");
         listOfCards.className = "cards";
         //Limpiar la partida jugada
-        document.getElementById("game").innerHTML = "";
+        document.getElementById("mainCards").innerHTML = "";
         // Agregamos el elemento  list of cards (elemento papá)  al elemento (super papá) de html
-        document.getElementById("game").innerHTML = ""
-        document.getElementById("game").appendChild(listOfCards);
+        document.getElementById("mainCards").appendChild(listOfCards);
         const duplicateArrayCards = [];
             // Switch para la elección de tema
             //switch dependiendo del tema 

@@ -1,8 +1,6 @@
 /*import App from './components/App.js';*/
-import {themes} from './components/themes.js';
-
-//document.getElementById('root').appendChild(App());
-
+import {themes, showCards} from './components/themes.js';
+import {getIndexTheme} from '../game.js';
 //Listener de botones 
 const listenersButtons = () =>{
     document.getElementById("startPlay").addEventListener("click",buttonThemes);
@@ -27,7 +25,6 @@ const buttonInstructions = () =>{
     document.getElementById("guide").style.display = "flex";
     document.getElementById("home").style.display = "none";
 }
-
 //Función botón salir de la página de instrucciones
 const buttonGuideExit = () =>{
     document.getElementById("home").style.display = "flex";
@@ -37,23 +34,18 @@ const buttonGuideExit = () =>{
 const selectionThemes = ()=>{
     document.getElementById("themesSelection").appendChild(themes());
 }
-
 //Función botón volver al menú
 const buttonBackToMenu = ()=>{
     document.getElementById("themes").style.display = "flex";
     document.getElementById("resultsPage").style.display = "none";
 }
-
 //Función botón volver al juego
 const buttonPlayAgain = () =>{
-    document.getElementById("game").style.display = "flex";
+    document.getElementById("game").style.display = "flex"
     document.getElementById("resultsPage").style.display = "none";
-    
-
+    const showCardsFun = showCards(getIndexTheme());
+    showCardsFun();
 }
-
-
-
 //Funciones que se llaman siempre
 listenersButtons();
 selectionThemes();

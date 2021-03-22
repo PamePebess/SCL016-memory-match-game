@@ -87,16 +87,14 @@ body {
     flex-direction: column;
 }
 .cards {
-    margin: auto;
+    margin: 2%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 }
 .cards img {
     height: 30vh;
-    width: 15vw;
 }
-
 /*Logo picture de todas las páginas*/
 #smallLogopic {
     height: 25vh;
@@ -104,7 +102,6 @@ body {
     position: absolute;
     top: 0;
 }
-
 /*Sección Resultado*/
 #resultsPage{
     display: flex;
