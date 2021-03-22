@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Memory Match</title>
@@ -9,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
-
 <body>
       <!---Inicio-->
     <section id="home">
@@ -24,20 +22,18 @@
       <div id="themesSelection"> </div>
       <button id="exit">Salir</button>
     </section>
- 
+    <!---Página de Juego-->
+    <section id = "game" style="display: none;">
+      <img id= "smallLogopic" src="image/logo.png" alt="logopicture">
+      <h1 id= "titleGameandIns">Memorice las cartas</h1>
+      <div id = "mainCards"></div>
+    </section>
     <!--Página resultado-->
     <section id="resultsPage" style="display: none;">
       <h1 id= "congratulations">¡Felicitaciones!</h1>
       <button id="playAgain">Volver a jugar</button>
       <button id="backToMenu">Volver al menú</button>
     </section>
-
-    <!---Página de Juego-->
-    <section id = "game" style="display: none;">
-      <img id= "smallLogopic" src="image/logo.png" alt="logopicture">
-      <h1 id= "titleGameandIns">Memorice las cartas</h1>
-    </section>
-    
     <!---Instrucciones-->
     <section id="guide" style="display: none;">
       <img id= "smallLogopic" src="image/logo.png" alt="logopicture">
@@ -47,7 +43,5 @@
     </section>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
-    
 </body>
-
 </html>
