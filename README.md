@@ -15,7 +15,7 @@ Los principales usuarios son las personas mayores de 60 años en adelante. El pr
   <img src="readme/prototipopapel2.jpg" alt="Imagen prototipo papel" width="150"/>
 </p>
 
-* Resumen feedback
+* Resumen feedback prototipo papel
 >Hay que agregar un botón "Salir".
 
 >Que las fotos y letras sean grandes.
@@ -25,7 +25,7 @@ Los principales usuarios son las personas mayores de 60 años en adelante. El pr
 ## Imagen prototipo final
 <img src="readme/prototipofinalfigma.jpg" alt="Imagen prototipo papel" width="150"/>
 
-## Resumen feedback prototipo final
+* Resumen feedback prototipo final
 >Estan bien los colores y el tamaño de los botones.
 
 >Las letras estan bien de tamaño.
