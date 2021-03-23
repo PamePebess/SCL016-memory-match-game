@@ -104,8 +104,8 @@ body {
     position: absolute;
     top: 0;
 }
-/*Sección kjResultado*/
-#resukltsPage{
+/*Sección Resultado*/
+#resultsPage{
     display: flex;
     flex-direction: column;
     align-items: center;
