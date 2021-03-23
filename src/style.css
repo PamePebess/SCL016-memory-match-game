@@ -85,6 +85,8 @@ body {
 #game {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 90vh;
 }
 .cards {
     margin: 2%;
@@ -120,7 +122,3 @@ body {
    border-radius: 30px;
    font-size: 4vw; 
 }
-
-
-
-
