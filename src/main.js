@@ -1,6 +1,6 @@
 /*import App from './components/App.js';*/
 import {themes, showCards} from './components/themes.js';
-import {getIndexTheme} from '../game.js';
+import {getIndexTheme} from './game.js';
 //Listener de botones 
 const listenersButtons = () =>{
     document.getElementById("startPlay").addEventListener("click",buttonThemes);
