@@ -16,6 +16,7 @@ Los principales usuarios son las personas mayores de 60 años en adelante. El pr
 </p>
 
 * Resumen feedback prototipo papel
+
 >Hay que agregar un botón "Salir".
 
 >Que las fotos y letras sean grandes.
@@ -26,11 +27,14 @@ Los principales usuarios son las personas mayores de 60 años en adelante. El pr
 <img src="readme/prototipofinalfigma.jpg" alt="Imagen prototipo papel" width="150"/>
 
 * Resumen feedback prototipo final
+
 >Estan bien los colores y el tamaño de los botones.
 
 >Las letras estan bien de tamaño.
 
 >Las fotos son nítidas.
+
+* Link página web proyecto: https://pamepebess.github.io/SCL016-memory-match-game/src/index.html
 
 
 
